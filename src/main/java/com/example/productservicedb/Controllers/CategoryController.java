@@ -1,2 +1,5 @@
-package com.example.productservicedb.Controllers;public class CategoryController {
+package com.example.productservicedb.Controllers;
+
+public class CategoryController {
+
 }

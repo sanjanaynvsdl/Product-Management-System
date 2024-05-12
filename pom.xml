@@ -43,6 +43,42 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--Dependencies added from maven-repository (Spring Starter JPA)-->
+		<!--This adds JPA and hibernate to our project  (After adding or removing any dependency sync with maven (load) -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+	     <!-- <version>3.2.4</version>&ndash;&gt;not required-->
+		</dependency>
+		<!-- This is for MySQL database -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>8.0.33</version>
+			<!-- Since this is a non-spring it cannot automatically know version so should not remove it -->
+			<!-- Since we have added these dependencies we are able to connect with MY-SQL database -->
+			<!-- After this we have to add some properties -->
+		</dependency>
+		<!--flyway core for database versioning we added this libraries -->
+		<!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+			<version>10.11.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-mysql</artifactId>
+			<version>10.12.0</version>
+		</dependency>
+
+
+
+
+
 	</dependencies>
 
 	<build>

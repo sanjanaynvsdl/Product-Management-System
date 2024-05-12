@@ -12,6 +12,7 @@ import lombok.Setter;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false)
     private Long id;
     private String title;
     private String description;
@@ -20,4 +21,5 @@ public class Product {
     //All these annotations are used from  jakarta.persistence package we added in pom.xml
     private Category category;
     private String image;
+//    private int qty; just to understand the schema versioning.
 }
